@@ -22,9 +22,21 @@ button {
   height: 50px;
   width: 140px;
   padding: 2px 5px;
-  border: 1px solid black;
-  border-radius: 10px;
   margin: 50px auto;
+  color: white;
+  background-color: #e76f51;
+  border: none;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .container {
