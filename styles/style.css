@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Highway Gothic Expanded";
+  src: url(webfont/hwygexpd-webfont.woff);
+}
+
+* {
+  font-family: "Highway Gothic Expanded", arial, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-area: 1 / 1 / 2/ 4;
+  margin: 10px 0 20px;
+}
+h1 {
+  padding: 20px 20px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  width: 140px;
+  padding: 2px 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 400px 150px;
+}
+
+.character {
+  grid-area: 2 / 1 / 4 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character p {
+  grid-area: 2 / 1 / 3 / 4;
+  margin: 20px 0;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.character img {
+  grid-area: 3 / 1 / 4 / 4;
+  max-width: 700px;
+  height: 400px;
+}
+
+.buttons {
+  grid-area: 4 / 1 / 5 / 4;
+  display: flex;
+  justify-content: space-around;
+}
